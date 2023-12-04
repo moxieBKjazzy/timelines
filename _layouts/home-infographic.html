@@ -6,15 +6,14 @@ layout: page
 <div class="row">
   <div class="col-md-8">
 
-    {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" height="300" %}
+    {% include index/carousel.html title="TimelineJS Example" %}
   
   </div>
   <div class="col-md-4">  
 
-    {% include index/time.html %}
+    {% include index/description.html %}
 
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" %}
 
     {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
 
@@ -23,7 +22,34 @@ layout: page
   </div>
   <div class="col-md-12">
 
-    {% include index/data-download.html %}
+    {% include index/carousel.html height=600 %}
 
   </div>
+  <div class="col-md-4">
+
+{% include index/time.html %}
+
+</div>
+<div class="col-md-4">
+
+{% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" %}
+{% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
+
+
+</div>
+<div class="col-md-4">
+
+{% include index/objects.html %}
+
+</div>
+
+<div class="col-md-6">
+
+{% include index/description.html %}
+
+</div>
+<div class="col-md-12">
+
+{% include index/data-download.html %}
+
 </div>
